@@ -114,14 +114,18 @@ const Menu = ({ darkMode, setDarkMode }) => {
           </Item>
         </Link>
         <Hr />
-        <Item>
-          <VideoLibraryOutlinedIcon />
-          Library
-        </Item>
-        <Item>
-          <HistoryOutlinedIcon />
-          History
-        </Item>
+        <Link to="/undev" style={{ textDecoration: "none", color: "inherit" }}>
+          <Item>
+            <VideoLibraryOutlinedIcon />
+            Library
+          </Item>
+        </Link>
+        <Link to="/undev" style={{ textDecoration: "none", color: "inherit" }}>
+          <Item>
+            <HistoryOutlinedIcon />
+            History
+          </Item>
+        </Link>
         <Hr />
         {!currentUser &&
           <>
